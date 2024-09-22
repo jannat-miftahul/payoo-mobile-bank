@@ -15,10 +15,10 @@
         <div class="mockup-phone">
             <div class="camera"></div>
             <div class="display">
-                <div class="artboard artboard-demo phone-2">
+                <div class="artboard artboard-demo phone-2 bg-slate-100">
                     <!-- avilable balance -->
                     <div>
-                        <div class="stats shadow">
+                        <div class="stats shadow bg-purple-300">
                             <div class="stat">
                                 <div class="stat-value">$<span id="balance">4500</span></div>
                                 <div class="stat-desc">Avilable Balance</div>
@@ -29,8 +29,8 @@
                     <div class="divider"></div>
                     <!-- user action buttons -->
                     <div>
-                        <button class="btn btn-outline btn-success">Add Money</button>
-                        <button class="btn btn-outline btn-error">Cashout</button>
+                        <button class="btn btn-outline text-green-600">Add Money</button>
+                        <button class="btn btn-outline text-red-600">Cashout</button>
                     </div>
                     <!-- divider -->
                     <div class="divider"></div>
@@ -43,14 +43,14 @@
                                     <span class="label-text">Amount to Add</span>
                                 </label>
                                 <input id="add-money" type="text" placeholder="Add amount to account"
-                                    class="input input-bordered" required />
+                                    class="input input-bordered rounded-full" required />
                             </div>
                             <div class="form-control">
                                 <label class="label">
                                     <span class="label-text">Pin Number</span>
                                 </label>
                                 <input id="pin" type="password" placeholder="Enter a 4 digit pin number"
-                                    class="input input-bordered" autocomplete="off" required />
+                                    class="input input-bordered rounded-full" autocomplete="off" required />
                                 <!-- <label class="label">
                                     <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
                                 </label> -->
@@ -71,14 +71,14 @@
                                     <span class="label-text">Amount</span>
                                 </label>
                                 <input id="cashout" type="text" placeholder="Add amount to withdraw"
-                                    class="input input-bordered" required />
+                                    class="input input-bordered rounded-full" required />
                             </div>
                             <div class="form-control">
                                 <label class="label">
                                     <span class="label-text">Pin Number</span>
                                 </label>
                                 <input id="cashout-pin" type="password" placeholder="Enter a 4 digit pin number"
-                                    class="input input-bordered" autocomplete="off" required />
+                                    class="input input-bordered rounded-full" autocomplete="off" required />
                             </div>
                             <div class="form-control mt-6">
                                 <button id="btn-cashout"
