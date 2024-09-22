@@ -21,7 +21,7 @@ document
             console.log("adding money to the account");
 
             // get the balance
-            const balance = document.getElementById('balance').innerText; // from div use innerText
+            const balance = document.getElementById("balance").innerText; // from div use innerText
             console.log(typeof addMoney, typeof balance);
 
             // add the amount to the balance
@@ -31,9 +31,9 @@ document
 
             const newBalance = addBalance + currentBalance;
             console.log(newBalance);
-            
+
             // update the balance
-            document.getElementById('balance').innerText = newBalance;
+            document.getElementById("balance").innerText = newBalance;
         } else {
             alert("Invalid Pin, please try again");
         }
