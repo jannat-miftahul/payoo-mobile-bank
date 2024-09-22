@@ -20,7 +20,7 @@
                     <div>
                         <div class="stats shadow">
                             <div class="stat">
-                                <div class="stat-value">$45000</div>
+                                <div class="stat-value">$<span id="balance">4500</span></div>
                                 <div class="stat-desc">Avilable Balance</div>
                             </div>
                         </div>
@@ -57,21 +57,23 @@
                                 <label class="label">
                                     <span class="label-text">Amount to Add</span>
                                 </label>
-                                <input type="number" placeholder="Add amount to withdraw" class="input input-bordered"
-                                    required />
+                                <input id="add-money" type="text" placeholder="Add amount to withdraw"
+                                    class="input input-bordered" required />
                             </div>
                             <div class="form-control">
                                 <label class="label">
                                     <span class="label-text">Pin Number</span>
                                 </label>
-                                <input type="password" placeholder="Enter a 4 digit pin number"
+                                <input id="pin" type="password" placeholder="Enter a 4 digit pin number"
                                     class="input input-bordered" autocomplete="off" required />
                                 <!-- <label class="label">
                                     <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
                                 </label> -->
                             </div>
                             <div class="form-control mt-6">
-                                <button class="btn btn-primary btn-rounded rounded-full bg-blue-600 border ">Add Money</button>
+                                <button id="btn-add-money"
+                                    class="btn btn-primary btn-rounded rounded-full bg-blue-600 border ">Add
+                                    Money</button>
                             </div>
                         </form>
                     </div>
@@ -81,7 +83,7 @@
     </main>
 
     <!-- javascript -->
-     <script src="js/home.js"></script>
+    <script src="js/home.js"></script>
 </body>
 
 </html>
