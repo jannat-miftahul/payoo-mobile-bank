@@ -1,10 +1,18 @@
 // console.log('utilities.js loaded');
 
+// common functions for reusability
+// for input fields
+function getInputFieldById(id) {
+    const inputValue = document.getElementById(id).value;
+    const inputNumber = parseFloat(inputValue);
+    console.log(id, inputNumber);
+    return inputNumber;
+}
 
-// common functions
-function getInputFieldById(){
-    console.log("getInputFieldById");
-    // get the amount and add it to the account
-    const addMoney = document.getElementById("add-money").value; // from input field use value
-    return addMoney;
+
+function getTextFieldById(id) {
+    const textValue = document.getElementById(id).innerText;
+    const textNumber = parseFloat(textValue);
+    console.log(id, textNumber);
+    return textNumber;
 }
