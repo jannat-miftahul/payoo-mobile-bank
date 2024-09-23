@@ -13,6 +13,7 @@ document
         const pinNumber = getInputFieldById('pin');
         console.log(addMoney, pinNumber);
 
+        // verify the pin
         if (pinNumber === 1234) {
             // get the balance
             const balance = getTextFieldById('balance');

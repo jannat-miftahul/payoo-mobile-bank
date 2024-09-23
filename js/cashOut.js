@@ -3,28 +3,54 @@
 document
     .getElementById("btn-cashout")
     .addEventListener("click", function (event) {
-        console.log("btn-cashout clicked");
+        // prevent page from reloading
         event.preventDefault();
 
-        // Get the form data
-        const pinNumber = document.getElementById("cashout-pin").value;
-        const cashOut = document.getElementById("cashout").value;
-        console.log("pin number: ", pinNumber, "cashout: ", cashOut);
+        // get the amount to cashout
+        const cashOut = getInputFieldById("cashout");
+        const pinNumber = getInputFieldById("cashout-pin");
+        console.log(cashOut, pinNumber);
 
-        // verify the pin number
-        if (pinNumber === "1234") {
-            const cashOutAmount = parseFloat(cashOut);
-            const balance = parseFloat(
-                document.getElementById("balance").innerText
-            );
-            console.log("cashOutAmount: ", cashOutAmount, "balance: ", balance);
+        // verify the pin
+        if (pinNumber === 1234) {
+            // get the balance
+            const balance = getTextFieldById("balance");
 
-            const newBalance = balance - cashOutAmount;
-            console.log("newBalance: ", newBalance);
+            // cashout the amount
+            const newBalance = balance - cashOut;
+            console.log(newBalance);
 
-            // Update the UI
+            // update the balance
             document.getElementById("balance").innerText = newBalance;
         } else {
-            alert("Invalid pin number. Please try again!");
+            alert("Invalid Pin, please try again");
         }
     });
+
+
+
+
+
+    
+
+// // Get the form data
+// const pinNumber = document.getElementById("cashout-pin").value;
+// const cashOut = document.getElementById("cashout").value;
+// console.log("pin number: ", pinNumber, "cashout: ", cashOut);
+
+// // verify the pin number
+// if (pinNumber === "1234") {
+//     const cashOutAmount = parseFloat(cashOut);
+//     const balance = parseFloat(
+//         document.getElementById("balance").innerText
+//     );
+//     console.log("cashOutAmount: ", cashOutAmount, "balance: ", balance);
+
+//     const newBalance = balance - cashOutAmount;
+//     console.log("newBalance: ", newBalance);
+
+//     // Update the UI
+//     document.getElementById("balance").innerText = newBalance;
+// } else {
+//     alert("Invalid pin number. Please try again!");
+// }
