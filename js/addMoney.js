@@ -1,4 +1,4 @@
-// console.log('home.js loaded');
+console.log('addMoney.js loaded');
 
 // add money to the account
 // add event listener to the button
