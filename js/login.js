@@ -15,7 +15,7 @@ document
         console.log(phoneNumber, pinNumber);
 
         // temporary method to check the phone number and pin number
-        if (phoneNumber === "123" && pinNumber === "1234") {
+        if (phoneNumber === "015" && pinNumber === "1234") {
             console.log("Login successful");
             // redirect to the home page
             window.location.href = 'home.html';
