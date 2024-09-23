@@ -16,3 +16,13 @@ function getTextFieldById(id) {
     console.log(id, textNumber);
     return textNumber;
 }
+
+// show section by id
+function showSectionById(id) {
+    document.getElementById("add-money-form").classList.add("hidden");
+    document.getElementById("cashout-form").classList.add("hidden");
+    document.getElementById("transactions").classList.add("hidden");
+
+    // show section
+    document.getElementById(id).classList.remove("hidden");
+}
