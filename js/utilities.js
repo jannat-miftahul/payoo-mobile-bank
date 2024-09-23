@@ -9,7 +9,7 @@ function getInputFieldById(id) {
     return inputNumber;
 }
 
-
+// for text fields
 function getTextFieldById(id) {
     const textValue = document.getElementById(id).innerText;
     const textNumber = parseFloat(textValue);

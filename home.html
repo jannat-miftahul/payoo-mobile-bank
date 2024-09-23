@@ -28,9 +28,11 @@
                     <!-- divider -->
                     <div class="divider"></div>
                     <!-- user action buttons -->
-                    <div>
+                    <div class="grid grid-cols-2 gap-4">
                         <button id="btn-toggle-add-money" class="btn btn-outline text-green-600">Add Money</button>
                         <button id="btn-toggle-cashout" class="btn btn-outline text-red-600">Cashout</button>
+                        <button id="btn-toggle-transaction"
+                            class="btn btn-outline text-blue-600 col-span-2">Transactions</button>
                     </div>
                     <!-- divider -->
                     <div class="divider"></div>
@@ -87,9 +89,32 @@
                             </div>
                         </form>
                     </div>
+
+                    <!-- transaction history -->
+                    <div id="transactions" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card-body">
+                            <div class="overflow-x-auto">
+                                <table class="table w-full">
+                                    <thead>
+                                        <tr>
+                                            <th>Transaction ID</th>
+                                            <th>Type</th>
+                                            <th>Amount</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="transaction-history">
+                                        <!-- <tr>
+                                            <td>1</td>
+                                            <td>Cash out</td>
+                                            <td>1000</td>
+                                        </tr> -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
     </main>
 
     <!-- javascript -->
