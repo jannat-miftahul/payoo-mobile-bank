@@ -15,7 +15,7 @@
         <div class="mockup-phone">
             <div class="camera"></div>
             <div class="display">
-                <div class="artboard artboard-demo phone-2 bg-slate-100">
+                <div class="artboard artboard-demo phone-3 bg-slate-100">
                     <!-- avilable balance -->
                     <div>
                         <div class="stats shadow bg-purple-300">
@@ -65,6 +65,8 @@
                         </form>
                     </div>
 
+
+
                     <!-- cashout form -->
                     <div id="cashout-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
@@ -90,27 +92,13 @@
                         </form>
                     </div>
 
+
+
                     <!-- transaction history -->
-                    <div id="transactions" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                        <div class="card-body">
-                            <div class="overflow-x-auto">
-                                <table class="table w-full">
-                                    <thead>
-                                        <tr>
-                                            <th>Transaction ID</th>
-                                            <th>Type</th>
-                                            <th>Amount</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="transaction-history">
-                                        <!-- <tr>
-                                            <td>1</td>
-                                            <td>Cash out</td>
-                                            <td>1000</td>
-                                        </tr> -->
-                                    </tbody>
-                                </table>
-                            </div>
+                    <div id="transactions" class="hidden">
+                        <h2 class="text-5xl text-center">Transaction History</h2>
+                        <div id="transaction-container" class="space-y-3">
+
                         </div>
                     </div>
                 </div>

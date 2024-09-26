@@ -22,16 +22,22 @@ document
 
             // update the balance
             document.getElementById("balance").innerText = newBalance;
+
+            // add to transaction history
+            const div = document.createElement("div");
+            div.classList.add("bg-yellow-100");
+            // console.log(div);
+            div.innerText = `
+            <h4 class = text-2xl>Cashout</h4> 
+            <p>Amount: ${cashOut}</p> <p>New balance: ${newBalance}</p>
+            `
+            document.getElementById("transactions").appendChild(div);
         } else {
             alert("Invalid Pin, please try again");
         }
     });
 
 
-
-
-
-    
 
 // // Get the form data
 // const pinNumber = document.getElementById("cashout-pin").value;

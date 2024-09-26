@@ -14,7 +14,7 @@ document
 
 // toggle transactions button
 document
-    .getElementById("btn-toggle-transactions")
+    .getElementById("btn-toggle-transaction")
     .addEventListener("click", function () {
         showSectionById("transactions");
     });

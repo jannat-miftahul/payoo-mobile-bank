@@ -24,6 +24,14 @@ document
             
             // update the balance
             document.getElementById('balance').innerText = newBalance;
+
+            // add to transaction history   
+            const p = document.createElement('p');
+            p.innerText = `Added $${addMoney} to your account. New balance: $${newBalance}`;
+            console.log(p);
+
+            // get the transaction history
+            document.getElementById('transactions').appendChild(p);
         } 
         else {        
             alert('Invalid Pin, please try again');
