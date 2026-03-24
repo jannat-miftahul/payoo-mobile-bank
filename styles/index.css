@@ -1,0 +1,76 @@
+/* ─────────────────────────────────────────
+   Payoo – Shared Styles
+   ───────────────────────────────────────── */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #f0f4ff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:
+        radial-gradient(ellipse at 20% 50%,
+            rgba(139, 92, 246, 0.08) 0%,
+            transparent 60%),
+        radial-gradient(ellipse at 80% 20%,
+            rgba(59, 130, 246, 0.08) 0%,
+            transparent 60%);
+}
+
+/* ── Phone Shell ─────────────────────────── */
+.phone-shell {
+    width: 430px;
+    /* Total shell height tracks the viewport, never overflows */
+    height: calc(100vh - 48px);
+    max-height: 760px;
+    background: #1a1a2e;
+    border-radius: 52px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    box-shadow:
+        0 50px 100px rgba(0, 0, 0, 0.28),
+        0 0 0 1px rgba(255, 255, 255, 0.06) inset;
+}
+
+.phone-notch {
+    width: 100px;
+    height: 26px;
+    background: #1a1a2e;
+    border-radius: 0 0 18px 18px;
+    margin: 0 auto 10px;
+    flex-shrink: 0;
+}
+
+.phone-screen {
+    background: #ffffff;
+    border-radius: 40px;
+    overflow: hidden;
+    /* NEVER let content bleed out */
+    flex: 1;
+    /* fills rest of shell exactly */
+}
+
+/* ── Animations ──────────────────────────── */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
