@@ -22,7 +22,6 @@ document
 
 
 
-    
 
 // // without function
 // // toggle cashout button

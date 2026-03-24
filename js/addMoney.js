@@ -25,13 +25,18 @@ document
             // update the balance
             document.getElementById('balance').innerText = newBalance;
 
-            // add to transaction history   
-            const p = document.createElement('p');
-            p.innerText = `Added $${addMoney} to your account. New balance: $${newBalance}`;
-            console.log(p);
-
-            // get the transaction history
-            document.getElementById('transactions').appendChild(p);
+            // add to transaction history
+            const card = document.createElement('div');
+            card.className = 'txn-card';
+            card.innerHTML = `
+              <div class="txn-icon add">➕</div>
+              <div class="txn-body">
+                <div class="txn-type">Money Added</div>
+                <div class="txn-balance">New balance: $${newBalance}</div>
+              </div>
+              <div class="txn-amount add">+$${addMoney}</div>
+            `;
+            document.getElementById('transaction-container').appendChild(card);
         } 
         else {        
             alert('Invalid Pin, please try again');
